@@ -18,6 +18,7 @@ export class QuestionComponent implements OnInit {
   }
 
   removeQuestion(question){
+    //remove data from the dataService
     this.dataService.removeQuestion(question)
   }
 

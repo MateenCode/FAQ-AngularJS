@@ -1,3 +1,4 @@
+<!-- creating customer event emmiter to add values to dataservice -->
 <app-add-question (questionAdded)="addQuestion($event)"></app-add-question>
-
+<!--  looping through all the question and also passing values to child -->
 <app-question *ngFor='let question of questions' [question]='question'></app-question>

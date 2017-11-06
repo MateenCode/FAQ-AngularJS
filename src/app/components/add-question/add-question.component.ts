@@ -6,6 +6,7 @@ import { Question } from '../../Question';
   styleUrls: ['./add-question.component.css']
 })
 export class AddQuestionComponent implements OnInit {
+  // outputting input values
   @Output() questionAdded = new EventEmitter<Question>();
 
   text:string;
@@ -18,6 +19,7 @@ export class AddQuestionComponent implements OnInit {
   }
 
   addQuestion(){
+    // grabbing inputted values from html
     this.questionAdded.emit({text:this.text, answer:this.answer,hide:true});
   }
 
